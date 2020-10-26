@@ -44,7 +44,7 @@ jobs:
         uses: dswistowski/surge-sh-action@v1.0.0
         with:
           # your surge.sh domain to deploy
-          domain: https://ellenandrob.surge.sh
+          domain: https://ellenandrob.com
           # surge.sh login
           login: peirvine@gmail.com
           # surge.sh token, generate it with `surge token` command
