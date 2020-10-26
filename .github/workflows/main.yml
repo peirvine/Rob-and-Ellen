@@ -19,6 +19,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
@@ -32,7 +34,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Run a build
-        run: yarn build
+        run: npm run build
 
       - name: Publish to surge.sh
         # You may pin to the exact commit or the version.
