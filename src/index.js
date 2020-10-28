@@ -5,50 +5,116 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Link,
 } from "react-router-dom";
+import { Nav, Navbar } from 'react-bootstrap';
 
-import CustomNav from './components/nav/CustomNav'
-import Footer from './components/footer/Footer'
-import Component from './component';
 import Home from './components/home/Home'
+import Header from './components/header/Header'
+import Schedule from './components/schedule/Schedule'
+import Travel from './components/travel/Travel'
+import Registry from './components/registry/Registry'
+import WeddingParty from './components/weddingparty/WeddingParty'
+import Photos from './components/photos/Photos'
+import ThingsToDo from './components/thingstodo/ThingsToDo'
+import Faqs from './components/faqs/FAQS'
+import Rsvp from './components/rsvp/RSVP'
+import Footer from './components/footer/Footer'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CustomNav />
     <Router>
+      <Header />
+      <div className="sticky">
+        <Navbar expand="lg">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="navBar" as="div">
+              <Nav.Link><Link to="/">Home</Link></Nav.Link>
+              <Nav.Link><Link to="/schedule">Schedule</Link></Nav.Link>
+              <Nav.Link><Link to="/travel">Travel</Link></Nav.Link>
+              <Nav.Link><Link to="/registry">Registry</Link></Nav.Link>
+              <Nav.Link><Link to="/wedding-party">Wedding Party</Link></Nav.Link>
+              <Nav.Link><Link to="/photos">Photos</Link></Nav.Link>
+              <Nav.Link><Link to="/things-to-do">Things To Do</Link></Nav.Link>
+              <Nav.Link><Link to="/faq">FAQS</Link></Nav.Link>
+              <Nav.Link><Link to="/rsvp">RSVP</Link></Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
       <Switch>
         <Route path="/schedule">
-          <Component />
+          <Schedule />
         </Route>
         <Route path="/travel">
-          <Component />
+          <Travel />
         </Route>
         <Route path="/registry">
-          <Component />
+          <Registry />
         </Route>
         <Route path="/wedding-party">
-          <Component />
+          <WeddingParty />
         </Route>
         <Route path="/photos">
-          <Component />
+          <Photos />
         </Route>
         <Route path="/things-to-do">
-          <Component />
+          <ThingsToDo />
         </Route>
         <Route path="/faq">
-          <Component />
+          <Faqs />
         </Route>
         <Route path="/rsvp">
-          <Component />
+          <Rsvp />
         </Route>
         <Route path="/">
           <Home />
         </Route>
       </Switch>
     </Router>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
