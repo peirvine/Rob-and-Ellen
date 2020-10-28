@@ -3,6 +3,9 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <h2>Footer</h2>
+    <div className="footer">
+      <p className="firstline">	&copy;{new Date().getFullYear()} Rob and Ellen</p>
+      <p>Designed inspired by Zola &bull; Made with Love by <a href="https://minnedev.com" target="_blank">Peter</a></p>
+    </div>
   )
 }
