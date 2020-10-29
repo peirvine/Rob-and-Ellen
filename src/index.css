@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
 * {
   font-family: 'Nanum Myeongjo', serif;
   color: #A4B1B8;
@@ -10,17 +13,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #D9D9D9;
+  background-color: white;
 }
 
 .navBar {
