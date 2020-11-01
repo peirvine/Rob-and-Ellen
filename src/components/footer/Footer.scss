@@ -1,0 +1,24 @@
+.footer {
+  text-align: center;
+  padding-top: 10px;
+  // border-top: 1px solid #a4b1b8;
+
+  .logo {
+    width: 200px;
+    padding: 20px 0 20px;
+  }
+
+  #wordBox {
+    border-top: 1px solid #a4b1b8;
+    padding: 20px 0 20px;
+  }
+
+  a {
+    color: #A4B1B8;
+    font-weight: bold;
+  }
+}
+
+.firstline {
+  margin-bottom: 0;
+}

@@ -1,0 +1,17 @@
+.partyRow {
+  text-align: center;
+  display: flex;
+  margin-bottom: 100px;
+  width: 100%;
+
+  .partyLeft {
+    padding: 60px;
+    flex: 1;
+  }
+
+  .partyRight {
+    border-left: solid 2px #a4b1b8;
+    padding: 60px;
+    flex: 1;
+  }
+}

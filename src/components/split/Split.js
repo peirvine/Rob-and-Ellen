@@ -6,11 +6,11 @@ export default function Split(payload) {
   return (
     <div className="split">
       <div className="splitLeft">
-        <p className="splitTitle"> {payload.title && (<p>{payload.title}</p>)} </p>
-        <p className="splitDate"> {payload.date && (<p>{payload.date}</p>)} </p>
+        {payload.title && (<p className="splitTitle"> {payload.title} </p>)}
+        {payload.date && (<p className="splitDate"> {payload.date} </p>)}
       </div>
       <div className="splitRight">
-        <p className="splitBody"> {payload.body && (<p>{payload.body}</p>)} </p>
+        {payload.body && (<p className="splitBody"> {payload.body} </p> )}
       </div>
     </div>
   )

@@ -15,9 +15,6 @@
   vertical-align: middle;
   padding: 70px 120px 30px 0px;;
   margin-top: 20px;
-}
-
-.splitLeft p {
   font-weight: 700;
   letter-spacing: .9px;
   font-size: 17px;
@@ -25,7 +22,7 @@
 }
 
 
-.splitTitle p{
+.splitTitle {
   font-family: 'Rozha One', serif;
   margin: 40px 0px 20px;
   text-transform: uppercase;
@@ -34,7 +31,7 @@
   letter-spacing: 6px;
 }
 
-.splitDate p {
+.splitDate {
   font-family: 'Nanum Myeongjo', serif;
   font-weight: 700;
   font-size: 17px;
