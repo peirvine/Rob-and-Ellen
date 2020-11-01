@@ -20,6 +20,7 @@ body {
   padding-bottom: 10px;
   border-bottom: 1px solid #D9D9D9;
   background-color: white;
+  z-index: 2;
 }
 
 .navBar {
