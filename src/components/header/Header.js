@@ -1,6 +1,6 @@
 import React from "react";
 
-import './Header.css'
+import './Header.scss'
 
 export default function Photos() {
   return (
@@ -10,7 +10,7 @@ export default function Photos() {
         <p className="city">Hopkins, MN</p>
       </div>
       <div className="names">
-        <h1> Ellen & Rob </h1>
+        <a href="/" id="er"><h1> Ellen & Rob </h1></a>
       </div>
     </>
   )
