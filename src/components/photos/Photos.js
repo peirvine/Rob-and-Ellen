@@ -24,6 +24,9 @@ export default function Photos() {
           </SRLWrapper>
         </SimpleReactLightbox>
       </div>
+      <div id="photosCredit">
+        <p>Photos by Brooke Elisabeth Photography</p>
+      </div>
     </>
   )
 }
