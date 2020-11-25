@@ -7,14 +7,14 @@ import "./Home.css"
 export default function Home() {
   const howWeMet= {
     title: 'How We Met',
-    date: "4.23.14",
-    body: "We met at a classmate’s party and didn’t think much of it. Then a bunch of us went to karaoke after a long day of back-to-back classes and we both picked, “I’d Do Anything for Love.” And it just clicked. He went low, I went high. There were fist pumps. We harmonized by accident. That’s pretty much when we thought, “Okay. This could be something.”",
+    date: "January 2016",
+    body: "We met in Multivariable Calculus during freshman year of college. We often made the long walk back from West Bank to Super Block together and were competitive with our test scores. It was 1.5 years later that Rob asked Ellen on their first date to Giordano’s and the rest is history!",
   }
 
   const proposal= {
     title: 'The Proposal',
-    date: "4.23.14",
-    body: "On the anniversary of when we first met, we went back to our old stomping grounds to do karaoke with friends. When 'I'd Do Anything for Love' came on, we ran up to the front. When the music suddenly died down, I looked over and she was down on one knee. I screamed, shouted YES, and we were engaged. We're so excited to celebrate this next chapter in our lives with you. See you in San Fran!",
+    date: "7.24.20",
+    body: "On a beautiful, sunny day at Lake Lizzie, Rob suggested they take a few pictures on the deck. With the tripod set up, Rob started recording and got down on one knee to ask Ellen to marry him. Ellen was surprised and through happy tears, she said yes! They were engaged, ready to start the next chapter of their lives together!",
   }
 
   return (

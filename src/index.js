@@ -16,8 +16,6 @@ import Travel from './components/travel/Travel'
 import Registry from './components/registry/Registry'
 import WeddingParty from './components/weddingparty/WeddingParty'
 import Photos from './components/photos/Photos'
-import ThingsToDo from './components/thingstodo/ThingsToDo'
-import Faqs from './components/faqs/FAQS'
 import Rsvp from './components/rsvp/RSVP'
 import Footer from './components/footer/Footer'
 
@@ -39,8 +37,6 @@ ReactDOM.render(
               <Nav.Link><Link to="/registry">Registry</Link></Nav.Link>
               <Nav.Link><Link to="/wedding-party">Wedding Party</Link></Nav.Link>
               <Nav.Link><Link to="/photos">Photos</Link></Nav.Link>
-              <Nav.Link><Link to="/things-to-do">Things To Do</Link></Nav.Link>
-              <Nav.Link><Link to="/faq">FAQS</Link></Nav.Link>
               <Nav.Link><Link to="/rsvp">RSVP</Link></Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -61,12 +57,6 @@ ReactDOM.render(
         </Route>
         <Route path="/photos">
           <Photos />
-        </Route>
-        <Route path="/things-to-do">
-          <ThingsToDo />
-        </Route>
-        <Route path="/faq">
-          <Faqs />
         </Route>
         <Route path="/rsvp">
           <Rsvp />
