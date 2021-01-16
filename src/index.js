@@ -20,7 +20,7 @@ import Rsvp from './components/rsvp/RSVP'
 import Footer from './components/footer/Footer'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
+import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
