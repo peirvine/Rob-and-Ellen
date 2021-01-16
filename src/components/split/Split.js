@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Split.css"
+import "./Split.scss"
 
 export default function Split(payload) {
   return (
