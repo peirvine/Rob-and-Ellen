@@ -32,7 +32,7 @@ ReactDOM.render(
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="navBar" as="div">
               <Nav.Link><Link to="/">Home</Link></Nav.Link>
-              {/*<Nav.Link><Link to="/schedule">Schedule</Link></Nav.Link>*/}
+              <Nav.Link><Link to="/schedule">Schedule</Link></Nav.Link>
               {/*<Nav.Link><Link to="/travel">Travel</Link></Nav.Link>*/}
               <Nav.Link><Link to="/registry">Registry</Link></Nav.Link>
               {/*<Nav.Link><Link to="/wedding-party">Wedding Party</Link></Nav.Link>*/}
