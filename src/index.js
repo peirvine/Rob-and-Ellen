@@ -42,29 +42,31 @@ ReactDOM.render(
           </Navbar.Collapse>
         </Navbar>
       </div>
-      <Switch>
-        <Route path="/schedule">
-          <Schedule />
-        </Route>
-        <Route path="/travel">
-          <Travel />
-        </Route>
-        <Route path="/registry">
-          <Registry />
-        </Route>
-        <Route path="/wedding-party">
-          <WeddingParty />
-        </Route>
-        <Route path="/photos">
-          <Photos />
-        </Route>
-        <Route path="/rsvp">
-          <Rsvp />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <div id="content">
+        <Switch>
+          <Route path="/schedule">
+            <Schedule />
+          </Route>
+          <Route path="/travel">
+            <Travel />
+          </Route>
+          <Route path="/registry">
+            <Registry />
+          </Route>
+          <Route path="/wedding-party">
+            <WeddingParty />
+          </Route>
+          <Route path="/photos">
+            <Photos />
+          </Route>
+          <Route path="/rsvp">
+            <Rsvp />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
     </Router>
     <Footer />
   </React.StrictMode>,
