@@ -2,7 +2,9 @@ import React from "react";
 
 import Split from '../split/Split'
 
-import "./Home.css"
+import "./Home.scss"
+
+import topimage from "../../images/homepageImage.jpg"
 
 export default function Home() {
   const howWeMet= {
@@ -22,11 +24,15 @@ export default function Home() {
       <div className="homeImage">
         <h1>We're Getting Married!</h1>
       </div>
+      <img src={topimage} alt="rob and ellen" id="mobileImage" />
       <div className="homeContent">
         <div id="homeNames">
           <p id="ellen">Ellen Aas</p>
           <p id="and">and</p>
           <p id="rob">Rob Renkor</p>
+        </div>
+        <div id="mobileNames">
+          <p> Ellen Aas and Rob Renkor </p>
         </div>
         <div id="dateCity">
           <div id="date">
