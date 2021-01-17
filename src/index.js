@@ -26,6 +26,7 @@ import './index.scss';
 
 const trackingId = "G-M6CY7G07XG"
 ReactGA.initialize(trackingId)
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>
