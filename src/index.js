@@ -12,7 +12,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 import Home from './components/home/Home'
 import Header from './components/header/Header'
 import Schedule from './components/schedule/Schedule'
-import Travel from './components/travel/Travel'
+import Hotels from './components/hotels/Hotels'
 import Registry from './components/registry/Registry'
 import WeddingParty from './components/weddingparty/WeddingParty'
 import Photos from './components/photos/Photos'
@@ -33,7 +33,7 @@ ReactDOM.render(
             <Nav className="navBar" as="div">
               <Nav.Link><Link to="/">Home</Link></Nav.Link>
               <Nav.Link><Link to="/schedule">Schedule</Link></Nav.Link>
-              {/*<Nav.Link><Link to="/travel">Travel</Link></Nav.Link>*/}
+              <Nav.Link><Link to="/hotels">Hotels</Link></Nav.Link>
               <Nav.Link><Link to="/registry">Registry</Link></Nav.Link>
               {/*<Nav.Link><Link to="/wedding-party">Wedding Party</Link></Nav.Link>*/}
               <Nav.Link><Link to="/photos">Photos</Link></Nav.Link>
@@ -47,8 +47,8 @@ ReactDOM.render(
           <Route path="/schedule">
             <Schedule />
           </Route>
-          <Route path="/travel">
-            <Travel />
+          <Route path="/hotels">
+            <Hotels />
           </Route>
           <Route path="/registry">
             <Registry />

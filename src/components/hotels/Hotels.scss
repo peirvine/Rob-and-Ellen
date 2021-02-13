@@ -1,0 +1,67 @@
+@media (min-width: 1000px) {
+  #holder{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3.375rem;
+
+    h2 {
+      text-align: center;
+      font-family: 'Rozha One', serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-size: 48pt;
+    }
+
+    #subhead {
+      text-align: center;
+      font-family: 'Nanum Myeongjo',serif;
+      font-weight: 700;
+      letter-spacing: .9px;
+      font-size: 17px;
+      line-height: 30px;
+      margin: 30px 0px 20px;
+      padding: 0px 224px;
+    }
+
+    #images {
+      text-align: center;
+      img {
+        height: 250px;
+        margin: 20px;
+        transition: transform .2s; /* Animation */
+      }
+
+      img:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #holder {
+    width: 90%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #a4b1b8;
+
+    h2 {
+      font-family: 'Rozha One', serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-size: 24pt;
+      text-align: center;
+    }
+  }
+
+  #images {
+    text-align: center;
+    img {
+      width: 80%;
+    }
+  }
+}
