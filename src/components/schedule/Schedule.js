@@ -1,5 +1,4 @@
 import React from "react";
-import Split from "../split/Split"
 import ScheduleEvent from "./ScheduleEvent"
 
 import './Schedule.scss'
