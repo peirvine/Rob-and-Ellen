@@ -1,5 +1,6 @@
 import React from "react";
 import Split from "../split/Split"
+import ScheduleEvent from "./ScheduleEvent"
 
 import './Schedule.scss'
 
@@ -11,8 +12,7 @@ export default function Schedule() {
     body: "Gethsemane Lutheran Church, Hopkins, MN",
     address1: '715 Minnetonka Mills Rd',
     address2: 'Hopkins, MN 55343',
-    addressURL: 'https://google.com',
-    image: 'faAddressCard'
+    addressURL: 'https://goo.gl/maps/VGd1HLMVye7fvJw68'
   }
 
   const reception= {
@@ -22,8 +22,7 @@ export default function Schedule() {
     body: "Oak Ridge Country Club",
     address1: '700 Oak Ridge Rd',
     address2: 'Hopkins, MN 55343',
-    addressURL: 'https://google.com',
-    image: 'faAddressCard'
+    addressURL: 'https://goo.gl/maps/zhVzrtzVBpWkq8i18'
   }
 
   return (
@@ -34,8 +33,9 @@ export default function Schedule() {
       <p id="subhead">
         Here's what to expect during our wedding weekend. We can't wait to celebrate with you!
       </p>
-      <Split {...ceremony}/>
-      <Split {...reception}/>
+
+      <ScheduleEvent {...ceremony}/>
+      <ScheduleEvent {...reception}/>
     </div>
   )
 }
