@@ -34,8 +34,8 @@ ReactDOM.render(
       <Header />
       <div className="sticky">
         <Navbar expand="lg" collsapseOnSelect>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse collapseOnSelect id="responsive-navbar-nav">
             <Nav className="navBar" as="div">
               <Nav.Link activeClass="active" eventKey="home"><Link to="/">Home</Link></Nav.Link>
               <Nav.Link activeClass="active" eventKey="schedule"><Link to="/schedule">Schedule</Link></Nav.Link>
