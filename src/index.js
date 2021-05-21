@@ -37,12 +37,12 @@ ReactDOM.render(
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="navBar" as="div">
-              <Nav.Link><Link to="/">Home</Link></Nav.Link>
-              <Nav.Link><Link to="/schedule">Schedule</Link></Nav.Link>
-              <Nav.Link><Link to="/hotels">Hotels</Link></Nav.Link>
-              <Nav.Link><Link to="/registry">Registry</Link></Nav.Link>
+              <Nav.Link activeClass="active" eventKey="home"><Link to="/">Home</Link></Nav.Link>
+              <Nav.Link activeClass="active" eventKey="schedule"><Link to="/schedule">Schedule</Link></Nav.Link>
+              <Nav.Link activeClass="active" eventKey="hotels"><Link to="/hotels">Hotels</Link></Nav.Link>
+              <Nav.Link activeClass="active" eventKey="registry"><Link to="/registry">Registry</Link></Nav.Link>
               {/*<Nav.Link><Link to="/wedding-party">Wedding Party</Link></Nav.Link>*/}
-              <Nav.Link><Link to="/photos">Photos</Link></Nav.Link>
+              <Nav.Link activeClass="active" eventKey="photos"><Link to="/photos">Photos</Link></Nav.Link>
               {/*<Nav.Link><Link to="/rsvp">RSVP</Link></Nav.Link>*/}
             </Nav>
           </Navbar.Collapse>
