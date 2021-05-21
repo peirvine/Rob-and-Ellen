@@ -33,7 +33,7 @@ ReactDOM.render(
     <Router>
       <Header />
       <div className="sticky">
-        <Navbar expand="lg">
+        <Navbar expand="lg" collsapseOnSelect>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="navBar" as="div">
