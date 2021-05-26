@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga'
 
 import {
   BrowserRouter as Router,
@@ -20,6 +21,11 @@ import Footer from './components/footer/Footer'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
+
+
+const trackingId = "G-M6CY7G07XG"
+ReactGA.initialize(trackingId)
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>
