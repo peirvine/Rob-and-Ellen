@@ -26,15 +26,15 @@ ReactDOM.render(
     <Router>
       <Header />
       <div className="sticky">
-        <Navbar expand="lg">
+        <Navbar collapseOnSelect expand="lg">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="navBar" as="div">
-              <Nav.Link><Link to="/">Home</Link></Nav.Link>
-              <Nav.Link><Link to="/schedule">Schedule</Link></Nav.Link>
-              <Nav.Link><Link to="/hotels">Hotels</Link></Nav.Link>
-              <Nav.Link><Link to="/registry">Registry</Link></Nav.Link>
-              <Nav.Link><Link to="/photos">Photos</Link></Nav.Link>
+              <Nav.Link eventKey="0" as={Link} to="/">Home</Nav.Link>
+              <Nav.Link eventKey="1" as={Link} to="/schedule">Schedule</Nav.Link>
+              <Nav.Link eventKey="2" as={Link} to="/hotels">Hotels</Nav.Link>
+              <Nav.Link eventKey="3" as={Link} to="/registry">Registry</Nav.Link>
+              <Nav.Link eventKey="4" as={Link} to="/photos">Photos</Nav.Link>
               <Nav.Link href="https://ellenandrob.anrsvp.com/" target="_blank" rel="noreferrer" as="a">RSVP</Nav.Link>
             </Nav>
           </Navbar.Collapse>
