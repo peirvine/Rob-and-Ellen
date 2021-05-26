@@ -11,7 +11,13 @@ export default function ScheduleEvent(payload) {
           {payload.date}
         </div>
         <div className="eventTime">
-          {payload.time}
+          {payload.time ? payload.time : (
+            <div id="eventGroupTime">
+              <p>Cocktail Hour: { payload.groupTime.cocktailHour} </p>
+              <p>Dinner: { payload.groupTime.dinner} </p>
+              <p>Dancing: { payload.groupTime.dancing} </p>
+            </div>
+          )}
         </div>
       </div>
       <div className="eventRight">

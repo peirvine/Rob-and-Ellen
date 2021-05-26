@@ -15,7 +15,6 @@ import Header from './components/header/Header'
 import Schedule from './components/schedule/Schedule'
 import Hotels from './components/hotels/Hotels'
 import Registry from './components/registry/Registry'
-import WeddingParty from './components/weddingparty/WeddingParty'
 import Photos from './components/photos/Photos'
 import Rsvp from './components/rsvp/RSVP'
 import Footer from './components/footer/Footer'
@@ -33,17 +32,16 @@ ReactDOM.render(
     <Router>
       <Header />
       <div className="sticky">
-        <Navbar expand="lg" collsapseOnSelect>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse collapseOnSelect id="responsive-navbar-nav">
+        <Navbar collapseOnSelect expand="lg">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="navBar" as="div">
-              <Nav.Link activeClass="active" eventKey="home"><Link to="/">Home</Link></Nav.Link>
-              <Nav.Link activeClass="active" eventKey="schedule"><Link to="/schedule">Schedule</Link></Nav.Link>
-              <Nav.Link activeClass="active" eventKey="hotels"><Link to="/hotels">Hotels</Link></Nav.Link>
-              <Nav.Link activeClass="active" eventKey="registry"><Link to="/registry">Registry</Link></Nav.Link>
-              {/*<Nav.Link><Link to="/wedding-party">Wedding Party</Link></Nav.Link>*/}
-              <Nav.Link activeClass="active" eventKey="photos"><Link to="/photos">Photos</Link></Nav.Link>
-              {/*<Nav.Link><Link to="/rsvp">RSVP</Link></Nav.Link>*/}
+              <Nav.Link eventKey="0" as={Link} to="/">Home</Nav.Link>
+              <Nav.Link eventKey="1" as={Link} to="/schedule">Schedule</Nav.Link>
+              <Nav.Link eventKey="2" as={Link} to="/hotels">Hotels</Nav.Link>
+              <Nav.Link eventKey="3" as={Link} to="/registry">Registry</Nav.Link>
+              <Nav.Link eventKey="4" as={Link} to="/photos">Photos</Nav.Link>
+              <Nav.Link href="https://ellenandrob.anrsvp.com/" target="_blank" rel="noreferrer" as="a">RSVP</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -58,9 +56,6 @@ ReactDOM.render(
           </Route>
           <Route path="/registry">
             <Registry />
-          </Route>
-          <Route path="/wedding-party">
-            <WeddingParty />
           </Route>
           <Route path="/photos">
             <Photos />

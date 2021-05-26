@@ -17,7 +17,11 @@ export default function Schedule() {
   const reception= {
     title: 'Reception',
     date: "Saturday, August 14th, 2021",
-    time: 'TBD',
+    groupTime: {
+      cocktailHour: "5:00-6:00pm",
+      dinner: "6:00pm",
+      dancing: "7:30-11:30pm"
+    },
     body: "Oak Ridge Country Club",
     address1: '700 Oak Ridge Rd',
     address2: 'Hopkins, MN 55343',
